@@ -994,7 +994,7 @@ Future setup({
       wallet: getIt.get<AppStore>().wallet!));
 
   getIt.registerFactory(() =>
-      DesktopWalletSelectionDropDown(getIt.get<WalletListViewModel>(), getIt.get<AuthService>()));
+      DesktopWalletSelectionDropDown(getIt.get<WalletListViewModel>()));
 
   getIt.registerFactory(() => DesktopSidebarViewModel());
 
